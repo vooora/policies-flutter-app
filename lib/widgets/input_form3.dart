@@ -185,7 +185,7 @@ class _InputFormState extends State<InputForm> {
                         .map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text(value, style: TextStyle(fontSize: 12)),
+                        child: Text(value, style: TextStyle(fontSize: 10.9)),
                       );
                     }).toList(),
                   ),
@@ -268,7 +268,7 @@ class _InputFormState extends State<InputForm> {
                               String modifiedQuestion = _question;
                               if (secondDropdownValue != 'None') {
                                 modifiedQuestion +=
-                                    ' I live in $secondDropdownValue';
+                                    'I am from $secondDropdownValue.';
                               }
                               final res = await fetchResponse(modifiedQuestion);
                               setState(() {
